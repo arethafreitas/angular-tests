@@ -79,7 +79,7 @@ describe('Array Test', ()=> {
 
   it('Testing Array using "toContain", arrays should be equal', () => {
     let strings = ['abc', 'def', 'ghi'];
-    expect(strings).toContain('ghi');
+    expect(strings).toContain('def');
   })
 
 })
