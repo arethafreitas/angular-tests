@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { EventTestComponent } from './event-test.component';
 
 
-describe('EventTestComponent', () => {
+fdescribe('EventTestComponent', () => {
   let component: EventTestComponent;
   let fixture: ComponentFixture<EventTestComponent>;
   let de: DebugElement;
@@ -23,15 +23,15 @@ describe('EventTestComponent', () => {
     de = fixture.debugElement;
   });
 
-  it('should create', () => {
+  xit('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should "Add Clicks" button is clicked', () => {
+  xit('should "Add Clicks" button is clicked', () => {
     const h1 = de.query(By.css('h1'));
     const btn = de.query(By.css('#btnAddClick'));
     btn.triggerEventHandler('click', {});
     fixture.detectChanges();
-    expect(component.counterClicks).toEqual(parseInt(h1.nativeElement.innerText));
+    expect(component.countClicks).toEqual(parseInt(h1.nativeElement.innerText));
   });
 });
