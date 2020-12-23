@@ -42,7 +42,7 @@ describe("ProductListComponent", () => {
     productSpy.calls.mostRecent().returnValue.then(() => {
       fixture.whenStable().then(() => {
         fixture.detectChanges();
-        const value = debugElement.query(By.css("#product_0")).nativeElement
+        const value = debugElement.query(By.css("#product_1")).nativeElement
           .innerText;
         expect(value).toContain(component.searchText);
       });
