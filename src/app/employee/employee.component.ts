@@ -1,9 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { AuthenticationService } from "./authentication.service";
+import { AuthenticationService } from "../authentication.service";
 
 @Component({
-  templateUrl: './employee.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './employee.component.html'
 })
 export class EmployeeComponent implements OnInit {
   salSlip: string;

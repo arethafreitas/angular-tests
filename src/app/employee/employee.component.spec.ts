@@ -1,5 +1,5 @@
 import { ComponentFixture, async, TestBed } from '@angular/core/testing';
-import { AuthenticationService } from './authentication.service';
+import { AuthenticationService } from '../authentication.service';
 import { EmployeeComponent } from './employee.component';
 
 describe('EmployeeComponent', () => {
@@ -37,7 +37,7 @@ describe('EmployeeComponent', () => {
 
   it('should assert "checkAuthentication" has been called', () => {
     spyOn(authService, 'checkAuthentication').and.returnValue(true);
-     let salarySlip = component.getSalarySlip();
+     // let salarySlip = component.getSalarySlip();
     // expect(salarySlip).toEqual('Salary Slip');
     expect(authService.checkAuthentication).toHaveBeenCalled();
   });
